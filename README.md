@@ -1,5 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
+yarn install and yarn start to run
+
 Things to do:
 -Improve UX/UI
 -Sort by color

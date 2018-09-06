@@ -1,0 +1,24 @@
+{
+  "name": "threesixtyfive",
+  "description": "photo project by Adrianna Tan",
+  "version": "1.0.0",
+  "engines": {
+    "yarn": "1.9.4"
+  },
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atan4/threesixtyfive.git"
+  },
+  "author": "Adrianna Tan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/atan4/threesixtyfive/issues"
+  },
+  "homepage": "https://github.com/atan4/threesixtyfive#readme"
+}

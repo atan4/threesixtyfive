@@ -6,3 +6,4 @@ Things to do:
 -Improve UX/UI
 -Sort by color
 -Add final photos
+-decide if display higher quality photos is worth the load time tradeoff

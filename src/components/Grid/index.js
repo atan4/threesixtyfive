@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react'
 import classnames from 'classnames'
 
-import { Sort, zoomClasses, zoomMinus, zoomPlus } from '../../CONSTANTS.js'
+import { Sort, zoomClasses, closeIcon } from '../../CONSTANTS.js'
 import GalleryModal from '../GalleryModal'
 
 import './style.css'
@@ -24,6 +24,21 @@ class Grid extends Component {
     this.findPrev = this.findPrev.bind(this)
     this.renderImageContent = this.renderImageContent.bind(this)
     this.toggleOldest = this.toggleOldest.bind(this)
+  }
+
+  componentWillMount() {
+    document.addEventListener('mousedown', this.handleClickOutside, false)
+  }
+
+  componentWillUnmount() {
+    document.removeEventListener('mousedown', this.handleClickOutside, false)
+  }
+
+  handleClickOutside = (event) => {
+    if (!this.node || this.node.contains(event.target)) {
+      return;
+    }
+    this.toggleEnterModal();
   }
 
   toggleOldest = () => {
@@ -123,12 +138,18 @@ class Grid extends Component {
     return (
       <div className="gallery-container">
         {enterModal &&
-          <div className="gallery-enter-modal">
-            <div className="gallery-enter-modal-text">
-              <h3>ThreeSixtyFive is a culmination of photos taken throughout a four-year period amid repeated academic hiatuses. Starting in 2014 with the original intention to produce a single photo every day, this project documents my growth as a photographer as well as the passage of time through high school and college.</h3>
-              <h3>While the full context of each photo remains unknown to the viewer, each photo serves as a landmark through which I can navigate my personal experiences and the development of my opinions and thoughts.</h3>
+          <div className="gallery-enter-modal-overlay">
+            <div className="gallery-enter-modal" ref={node => this.node = node}>
+              <header>
+                <span onClick={this.toggleEnterModal}>{closeIcon}</span>
+              </header>
+              <div className="gallery-enter-modal-text">
+                <h1>ThreeSixtyFive by Adrianna Tan</h1>
+                <h3>ThreeSixtyFive is a culmination of photos taken throughout a four-year period amid repeated academic hiatuses. Starting in 2014 with the original intention to produce a single photo every day, this project documents my growth as a photographer as well as the passage of time throughout high school and college.</h3>
+                <h3>While the full context of each photo remains unknown to the viewer, each photo serves as a landmark through which I can navigate my personal experiences and the development of my opinions and thoughts over time.</h3>
+                <h3>For comments and inquiries, reach me at <a href="mailto:atan4@wellesley.edu" className="gallery-enter-modal-link">atan4@wellesley.edu</a></h3>
+              </div>
             </div>
-            <span className="enter-button" onClick={this.toggleEnterModal}>Enter</span>
           </div>
         }
         <div className="gallery-header">
@@ -141,8 +162,8 @@ class Grid extends Component {
             </div>
           }
           <div className="gallery-zoom">
-            <span className="zoom-minus" onClick={this.incrementScale}>{zoomMinus}</span>
-            <span className="zoom-plus" onClick={this.decrementScale}>{zoomPlus}</span>
+            <span className="zoom-minus" onClick={this.incrementScale}>-</span>
+            <span className="zoom-plus" onClick={this.decrementScale}>+</span>
           </div>
         </div>
         <div className={classnames("gallery-grid", zoomClasses[zoomIndex - 2])}>

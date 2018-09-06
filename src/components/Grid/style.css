@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: helvetica;
+  font-family: 'Roboto', sans-serif;
   position: relative;
   font-size: 100%;
   background: #fff;
@@ -116,26 +116,20 @@ body {
   margin: 0 5px;
   width: 128px;
   background-color: white;
-  border: 2px solid white;
   color: black;
-  padding: 5px 12px;
-  text-align: left;
-  text-decoration: none;
+  padding: 7px 15px;
   float: right;
   font-size: 14px;
   cursor: pointer;
   border-radius: 3px;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
   user-select: none;
+  text-align: center;
 }
 
 .header-button {
   z-index: 99;
   margin: 0 10px;
   background-color: white;
-  border: 2px solid white;
   color: black;
   padding: 5px 12px;
   position: absolute;
@@ -158,8 +152,21 @@ body {
 }
 
 .enter-button:hover,
-.header-button:hover {
+.header-button:hover,
+.sort-button:hover,
+.zoom-minus:hover,
+.zoom-plus:hover {
   background: rgb(240, 240, 240);
+}
+
+.enter-button,
+.header-button,
+.sort-button,
+.zoom-minus,
+.zoom-plus,
+.close-x,
+.gallery-enter-modal-link {
+  transition: all 0.5s ease;
 }
 
 .gallery-zoom {
@@ -177,12 +184,13 @@ body {
 .zoom-minus,
 .zoom-plus {
   cursor: pointer;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   display: flex;
   background: white;
   border-radius: 3px;
   width: 30px;
+  font-size: 22px;
   margin-right: 5px;
 }
 
@@ -210,24 +218,69 @@ body {
   background: rgb(240, 240, 240);
 }
 
-.gallery-enter-modal {
+.gallery-enter-modal-overlay {
   width: 100vw;
   height: 100vh;
   position: fixed;
   z-index: 10000000000;
-  background-color: rgba(0,0,0, 0.8);
+  background-color: rgba(0,0,0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery-enter-modal {
+  background: white;
+  border-radius: 3px;
+  width: 80vh;
+  height: 80vh;
+}
+
+.gallery-enter-modal header {
+  height: 44px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.gallery-enter-modal svg {
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
 }
 
 .gallery-enter-modal-text {
-  max-height: 88%;
-  overflow: scroll;
-  margin-bottom: 50px;
+  margin-left: 30px
+}
+
+.gallery-enter-modal-text h1 {
+  font-family: 'Playfair Display', serif;
+  margin: 0;
+  font-size: 30px;
 }
 
 .gallery-enter-modal h3 {
-  color: white;
-  max-width: 60%;
-  margin-left: 30px;
-  font-size: 32px;
-  font-weight: 500;
+  color: black;
+  width: 90%;
+  font-size: 17px;
+  font-weight: 100;
+}
+
+.gallery-enter-modal-link {
+  text-decoration: none;
+  color: black;
+}
+
+.gallery-enter-modal-link:hover {
+  color: #0000EE;
+}
+
+.close-x {
+  stroke: black;
+  fill: transparent;
+  stroke-width: 2px;
+}
+
+.close-x:hover {
+  stroke: gray;
 }

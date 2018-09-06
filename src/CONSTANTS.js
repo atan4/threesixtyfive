@@ -348,6 +348,18 @@ import photo345 from './imgs/365thumb/345.jpg'
 import photo346 from './imgs/365thumb/346.jpg'
 import photo347 from './imgs/365thumb/347.jpg'
 import photo348 from './imgs/365thumb/348.jpg'
+import photo349 from './imgs/365thumb/349.jpg'
+import photo350 from './imgs/365thumb/350.jpg'
+import photo351 from './imgs/365thumb/351.jpg'
+import photo352 from './imgs/365thumb/352.jpg'
+import photo353 from './imgs/365thumb/353.jpg'
+import photo354 from './imgs/365thumb/354.jpg'
+import photo355 from './imgs/365thumb/355.jpg'
+import photo356 from './imgs/365thumb/356.jpg'
+import photo357 from './imgs/365thumb/357.jpg'
+import photo358 from './imgs/365thumb/358.jpg'
+import photo359 from './imgs/365thumb/359.jpg'
+import photo360 from './imgs/365thumb/360.jpg'
 
 export const photos = {
   "1": photo1,
@@ -698,18 +710,18 @@ export const photos = {
   "346": photo346,
   "347": photo347,
   "348": photo348,
-  // "349": photo349,
-  // "350": photo350,
-  // "351": photo351,
-  // "352": photo352,
-  // "353": photo353,
-  // "354": photo354,
-  // "355": photo355,
-  // "356": photo356,
-  // "357": photo357,
-  // "358": photo358,
-  // "359": photo359,
-  // "360": photo360,
+  "349": photo349,
+  "350": photo350,
+  "351": photo351,
+  "352": photo352,
+  "353": photo353,
+  "354": photo354,
+  "355": photo355,
+  "356": photo356,
+  "357": photo357,
+  "358": photo358,
+  "359": photo359,
+  "360": photo360,
   // "361": photo361,
   // "362": photo362,
   // "363": photo363,
@@ -725,25 +737,8 @@ export const Sort = Object.freeze({
 
 export const zoomClasses = ["two", "three", "four", "five", "six", "seven", "eight"]
 
-export const zoomMinus = (
-  <svg width="25px" height="25px" viewBox="0 0 239 239">
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-      <g id="Group">
-        <circle id="Oval" fill="#FFFFFF" cx="119.5" cy="119.5" r="119.5"></circle>
-        <rect id="Rectangle-2" fill="#000000" transform="translate(119.500000, 119.500000) scale(-1, 1) rotate(90.000000) translate(-119.500000, -119.500000) " x="110" y="46" width="19" height="147"></rect>
-      </g>
-    </g>
-  </svg>
-)
-
-export const zoomPlus = (
-  <svg width="25px" height="25px" viewBox="0 0 239 239">
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-      <g id="Group" transform="translate(119.500000, 119.500000) rotate(90.000000) translate(-119.500000, -119.500000) ">
-        <circle id="Oval" fill="#FFFFFF" cx="119.5" cy="119.5" r="119.5"></circle>
-        <rect id="Rectangle-2" fill="#000000" transform="translate(119.500000, 119.500000) rotate(90.000000) translate(-119.500000, -119.500000) " x="110" y="46" width="19" height="147"></rect>
-        <rect id="Path" fill="#000000" x="110" y="46" width="19" height="147"></rect>
-      </g>
-    </g>
+export const closeIcon = (
+  <svg viewBox="0 0 40 40">
+    <path className="close-x" d="M 10,10 L 30,30 M 30,10 L 10,30" />
   </svg>
 )

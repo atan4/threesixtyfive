@@ -28,7 +28,6 @@ class GalleryModal extends Component {
   render() {
     const { closeModal, hasNext, hasPrev, findNext, findPrev, src, currentIndex } = this.props
     if (!src) {
-      console.log('no src :(')
       return null
     }
 

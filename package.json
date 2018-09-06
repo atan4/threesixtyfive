@@ -9,7 +9,7 @@
     "react-dom": "^16.4.1",
     "react-scripts": "1.1.4",
     "url-loader": "^1.0.1",
-    "webpack": "^4.16.4"
+    "webpack": "^4.17.2"
   },
   "scripts": {
     "start": "react-scripts start",

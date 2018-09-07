@@ -1,24 +1,24 @@
 {
   "name": "threesixtyfive",
-  "description": "photo project by Adrianna Tan",
-  "version": "1.0.0",
+  "version": "0.1.0",
+  "private": true,
   "engines": {
     "yarn": "1.9.4"
   },
-  "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {},
+  "dependencies": {
+    "babel": "^6.23.0",
+    "classnames": "^2.2.6",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-scripts": "^1.1.5",
+    "url-loader": "^1.0.1",
+    "webpack": "^4.17.2"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/atan4/threesixtyfive.git"
-  },
-  "author": "Adrianna Tan",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/atan4/threesixtyfive/issues"
-  },
-  "homepage": "https://github.com/atan4/threesixtyfive#readme"
+  "devDependencies": {}
 }

@@ -1,5 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
+CSS grid and modal inspired byhttps://codepen.io/tvweinstock/pen/wegZEW
+
 yarn install and yarn start to run
 
 Things to do:

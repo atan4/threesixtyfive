@@ -145,7 +145,7 @@ class Grid extends Component {
               </header>
               <div className="gallery-enter-modal-text">
                 <h1>ThreeSixtyFive by Adrianna Tan</h1>
-                <h3>ThreeSixtyFive is a collection of photos taken throughout a four-year period amid repeated academic hiatuses. Starting in 2014 with the original intention to produce a single photo every day, this project documents my growth as a photographer as well as the passage of time throughout high school and college.</h3>
+                <h3>ThreeSixtyFive is a culmination of photos taken throughout a five-year period amid repeated academic hiatuses. Starting in 2014 with the original intention to produce a single photo every day, this project documents my growth as a photographer as well as the passage of time throughout high school and college.</h3>
                 <h3>While the full context of each photo remains unknown to the viewer, each photo serves as a landmark through which I can navigate my personal experiences and the development of my opinions and thoughts over time.</h3>
                 <h3>For comments and inquiries, reach me at <a href="mailto:atan4@wellesley.edu" className="gallery-enter-modal-link">atan4@wellesley.edu</a></h3>
               </div>

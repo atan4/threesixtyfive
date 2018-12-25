@@ -360,6 +360,11 @@ import photo357 from './imgs/365thumb/357.jpg'
 import photo358 from './imgs/365thumb/358.jpg'
 import photo359 from './imgs/365thumb/359.jpg'
 import photo360 from './imgs/365thumb/360.jpg'
+import photo361 from './imgs/365thumb/361.jpg'
+import photo362 from './imgs/365thumb/362.jpg'
+import photo363 from './imgs/365thumb/363.jpg'
+import photo364 from './imgs/365thumb/364.jpg'
+import photo365 from './imgs/365thumb/365.jpg'
 
 export const photos = {
   "1": photo1,
@@ -722,11 +727,11 @@ export const photos = {
   "358": photo358,
   "359": photo359,
   "360": photo360,
-  // "361": photo361,
-  // "362": photo362,
-  // "363": photo363,
-  // "364": photo364,
-  // "365": photo365
+  "361": photo361,
+  "362": photo362,
+  "363": photo363,
+  "364": photo364,
+  "365": photo365
 }
 
 
